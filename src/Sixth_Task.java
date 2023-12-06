@@ -7,7 +7,7 @@ public class Sixth_Task {
             total = total + total/100*7;
             total = total + contribution;
             month++;
-            if (month % 6 == 0) {
+            if (month % 6 == 0){
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + total);
             }
         }
