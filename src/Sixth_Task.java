@@ -4,10 +4,10 @@ public class Sixth_Task {
         int total = 0;
         int month = 0;
         while (month < 108){
-            total = total + total/100*7;
             total = total + contribution;
+            total = total + total/100*7;
             month++;
-            if (month % 6 == 0){
+            if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + total);
             }
         }

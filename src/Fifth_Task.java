@@ -4,8 +4,8 @@ public class Fifth_Task {
         int total = 0;
         int month = 0;
         while (total < 12_000_000){
-            total = total + total/100*7;
             total = total + contribution;
+            total = total + total/100*7;
             month++;
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + total);
