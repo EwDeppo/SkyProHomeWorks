@@ -5,10 +5,10 @@ public class SmartPhone {
     private int year;
     private String operationSystem;
 
-    public SmartPhone(String name, int year, String operationSystem) {
+    public SmartPhone(String name, int year, int numberOS) {
         this.name = name;
         this.year = year;
-        this.operationSystem = operationSystem;
+        setOperationSystem(numberOS);
     }
 
     public String getName() {
@@ -19,7 +19,10 @@ public class SmartPhone {
         return year;
     }
 
-    public String getOperationSystem(int numberOS) {
+    public String getOperationSystem(){
+        return operationSystem;
+    }
+    public void setOperationSystem(int numberOS) {
         if (numberOS < 0 || numberOS > 1) {
             System.out.println("Такой операционной системы не существует");
         } else if (numberOS == 0) {
