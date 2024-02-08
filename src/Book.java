@@ -11,7 +11,7 @@ public class Book {
     public Author getAuthor(){return this.author;}
     public void setPublishingYear(int publishingYear) {
         if (publishingYear <= 0) {
-            System.out.println("Данное число не допустимо");
+            System.out.println("Данное число не допустимо.");
         } else { this.publishingYear = publishingYear;}
     }
     public int getPublishingYear(){return this.publishingYear;}
