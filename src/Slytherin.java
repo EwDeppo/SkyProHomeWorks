@@ -46,8 +46,8 @@ public class Slytherin extends Hogwarts {
     }
 
     public static void comparePropertiesSlytherin(Slytherin firstSlytherin, Slytherin secondSlytherin) {
-        int sumOfPropertiesFirst = firstSlytherin.getAmbition() + firstSlytherin.getCunning() + firstSlytherin.getDetermination() + firstSlytherin.getLustForPower() + firstSlytherin.getResourcefulness();
-        int sumOfPropertiesSecond = secondSlytherin.getAmbition() + secondSlytherin.getCunning() + secondSlytherin.getDetermination() + secondSlytherin.getLustForPower() + secondSlytherin.getResourcefulness();
+        int sumOfPropertiesFirst = firstSlytherin.getAmbition() + firstSlytherin.getCunning() + firstSlytherin.getDetermination() + firstSlytherin.getLustForPower() + firstSlytherin.getResourcefulness() + firstSlytherin.getMagicForce() + firstSlytherin.getTransgression();
+        int sumOfPropertiesSecond = secondSlytherin.getAmbition() + secondSlytherin.getCunning() + secondSlytherin.getDetermination() + secondSlytherin.getLustForPower() + secondSlytherin.getResourcefulness() + secondSlytherin.getMagicForce() + secondSlytherin.getTransgression();
         if (sumOfPropertiesFirst > sumOfPropertiesSecond) {
             System.out.println(firstSlytherin.getName() + " лучший Слизеринец, чем " + secondSlytherin.getName());
         } else if (sumOfPropertiesSecond > sumOfPropertiesFirst) {

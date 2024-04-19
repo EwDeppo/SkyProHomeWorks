@@ -39,8 +39,8 @@ public class Ravenclaw extends Hogwarts {
     }
 
     public static void comparePropertiesPavenclaw(Ravenclaw firstRavenclaw, Ravenclaw secondRavenclaw) {
-        int sumOfPropertiesFirst = firstRavenclaw.getCreation() + firstRavenclaw.getSmart() + firstRavenclaw.getWit() + firstRavenclaw.getWisdom();
-        int sumOfPropertiesSecond = secondRavenclaw.getCreation() + secondRavenclaw.getSmart() + secondRavenclaw.getWit() + secondRavenclaw.getWisdom();
+        int sumOfPropertiesFirst = firstRavenclaw.getCreation() + firstRavenclaw.getSmart() + firstRavenclaw.getWit() + firstRavenclaw.getWisdom() + firstRavenclaw.getMagicForce() + firstRavenclaw.getTransgression();
+        int sumOfPropertiesSecond = secondRavenclaw.getCreation() + secondRavenclaw.getSmart() + secondRavenclaw.getWit() + secondRavenclaw.getWisdom() + secondRavenclaw.getMagicForce() + secondRavenclaw.getTransgression();
         if (sumOfPropertiesFirst > sumOfPropertiesSecond) {
             System.out.println(firstRavenclaw.getName() + " лучший Когтевранец, чем " + secondRavenclaw.getName());
         } else if (sumOfPropertiesSecond > sumOfPropertiesFirst) {

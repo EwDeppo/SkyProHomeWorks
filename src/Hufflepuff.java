@@ -32,8 +32,8 @@ public class Hufflepuff extends Hogwarts {
     }
 
     public static void comparePropertiesHufflepuff(Hufflepuff firstHufflepuff, Hufflepuff secondHufflepuff) {
-        int sumOfPropertiesFirst = firstHufflepuff.getHardWork() + firstHufflepuff.getLoyalty() + firstHufflepuff.getHonesty();
-        int sumOfPropertiesSecond = secondHufflepuff.getHardWork() + secondHufflepuff.getLoyalty() + secondHufflepuff.getHonesty();
+        int sumOfPropertiesFirst = firstHufflepuff.getHardWork() + firstHufflepuff.getLoyalty() + firstHufflepuff.getHonesty() + firstHufflepuff.getMagicForce() + firstHufflepuff.getTransgression();
+        int sumOfPropertiesSecond = secondHufflepuff.getHardWork() + secondHufflepuff.getLoyalty() + secondHufflepuff.getHonesty() + secondHufflepuff.getMagicForce() + secondHufflepuff.getTransgression();
         if (sumOfPropertiesFirst > sumOfPropertiesSecond) {
             System.out.println(firstHufflepuff.getName() + " лучший Пуффиндуец, чем " + secondHufflepuff.getName());
         } else if (sumOfPropertiesFirst < sumOfPropertiesSecond) {

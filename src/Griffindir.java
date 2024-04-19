@@ -32,8 +32,8 @@ public class Griffindir extends Hogwarts {
     }
 
     public static void comparePropertiesGriffindir(Griffindir firstGriffindir, Griffindir secondGriffindir) {
-        int sumOfPropertiesFirst = firstGriffindir.getNobility() + firstGriffindir.getHonor() + firstGriffindir.getBravery();
-        int sumOfPropertiesSecond = secondGriffindir.getNobility() + secondGriffindir.getHonor() + secondGriffindir.getBravery();
+        int sumOfPropertiesFirst = firstGriffindir.getNobility() + firstGriffindir.getHonor() + firstGriffindir.getBravery() + firstGriffindir.getMagicForce() + firstGriffindir.getTransgression();
+        int sumOfPropertiesSecond = secondGriffindir.getNobility() + secondGriffindir.getHonor() + secondGriffindir.getBravery() + secondGriffindir.getMagicForce() + secondGriffindir.getTransgression();
         if (sumOfPropertiesFirst > sumOfPropertiesSecond) {
             System.out.println(firstGriffindir.getName() + " лучший Грифиндорец, чем " + secondGriffindir.getName());
         } else if (sumOfPropertiesFirst < sumOfPropertiesSecond) {
