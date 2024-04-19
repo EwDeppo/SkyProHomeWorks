@@ -9,6 +9,15 @@ abstract public class Hogwarts {
         this.transgression = transgression;
     }
 
+    @Override
+    public String toString() {
+        return "Hogwarts{" +
+                "name='" + name + '\'' +
+                ", magicForce=" + magicForce +
+                ", transgression=" + transgression +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
@@ -21,9 +30,7 @@ abstract public class Hogwarts {
         return transgression;
     }
 
-    public void print(Hogwarts hogwarts) {
-        System.out.println("Имя: " + name +", Мощность магии: " + magicForce + ", Трансгрессия: " + transgression + ", " + hogwarts);
-    }
+
     public static void comparePropertiesStudents(Hogwarts firstStudent, Hogwarts secondStudent) {
         int sumOfPropertiesFirst = firstStudent.getMagicForce() + firstStudent.getTransgression();
         int sumOfPropertiesSecond = secondStudent.getMagicForce() + secondStudent.getTransgression();

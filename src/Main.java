@@ -13,15 +13,14 @@ public class Main {
         Slytherin dracoMalfoy = new Slytherin("Draco Malfoy", 28, 23, 55, 65, 60, 65, 70);
         Slytherin grahamMontague = new Slytherin("Graham Montague", 15, 19, 50, 55, 60, 63, 80);
         Slytherin gregoryGoyle = new Slytherin("Gregory Goyle", 30, 25, 60, 45, 50, 65, 77);
-        Hogwarts.comparePropertiesStudents(padmaPatil, dracoMalfoy);
-        ronaldWeasleyonald.comparePropertiesGriffindir(hermioneGranger, ronaldWeasleyonald);
-        Hufflepuff.comparePropertiesHufflepuff(cedricDiggory, zachariasSmith);
+        System.out.println(ronaldWeasleyonald);
+        System.out.println(justinFinchFletchley);
+        System.out.println(choChang);
+        System.out.println(gregoryGoyle);
+        Griffindir.comparePropertiesGriffindir(harryPotter, hermioneGranger);
+        Hufflepuff.comparePropertiesHufflepuff(zachariasSmith, cedricDiggory);
         Ravenclaw.comparePropertiesPavenclaw(choChang, marcusBelby);
-        Slytherin.comparePropertiesSlytherin(grahamMontague, gregoryGoyle);
-        harryPotter.print(harryPotter);
-        hermioneGranger.print(hermioneGranger);
-        ronaldWeasleyonald.print(ronaldWeasleyonald);
-        zachariasSmith.print(zachariasSmith);
-        justinFinchFletchley.print(justinFinchFletchley);
+        Slytherin.comparePropertiesSlytherin(grahamMontague, dracoMalfoy);
+        Hogwarts.comparePropertiesStudents(dracoMalfoy, padmaPatil);
     }
 }

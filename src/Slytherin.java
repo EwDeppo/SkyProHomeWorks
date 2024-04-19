@@ -16,36 +16,32 @@ public class Slytherin extends Hogwarts {
 
     @Override
     public String toString() {
-        return ", Хитрость: " + cunning +
-                ", Решительность: " + determination +
-                ", Амбиции: " + ambition +
-                ", Находчивость: " + resourcefulness +
-                ", Жажда власти: " + lustForPower +
-                '.';
+        return super.toString() +
+                "cunning=" + cunning +
+                ", determination=" + determination +
+                ", ambition=" + ambition +
+                ", resourcefulness=" + resourcefulness +
+                ", lustForPower=" + lustForPower +
+                '}';
     }
 
     public int getCunning() {
-
         return cunning;
     }
 
     public int getDetermination() {
-
         return determination;
     }
 
     public int getAmbition() {
-
         return ambition;
     }
 
     public int getResourcefulness() {
-
         return resourcefulness;
     }
 
     public int getLustForPower() {
-
         return lustForPower;
     }
 

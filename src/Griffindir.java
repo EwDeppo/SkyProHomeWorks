@@ -12,10 +12,11 @@ public class Griffindir extends Hogwarts {
 
     @Override
     public String toString() {
-        return ", Благородство: " + nobility +
-                ", Честь: " + honor +
-                ", Храбрость: " + bravery +
-                '.';
+        return super.toString() +
+                "nobility=" + nobility +
+                ", honor=" + honor +
+                ", bravery=" + bravery +
+                '}';
     }
 
     public int getNobility() {
@@ -30,15 +31,15 @@ public class Griffindir extends Hogwarts {
         return bravery;
     }
 
-    public void comparePropertiesGriffindir(Griffindir firstGriffindir, Griffindir secondGriffindir) {
-        int sumOfPropertiesFirst = firstGriffindir.getNobility() + firstGriffindir.getBravery() + firstGriffindir.getHonor();
-        int sumOfPropertiesSecond = secondGriffindir.getNobility() + secondGriffindir.getBravery() + secondGriffindir.getHonor();
+    public static void comparePropertiesGriffindir(Griffindir firstGriffindir, Griffindir secondGriffindir) {
+        int sumOfPropertiesFirst = firstGriffindir.getNobility() + firstGriffindir.getHonor() + firstGriffindir.getBravery();
+        int sumOfPropertiesSecond = secondGriffindir.getNobility() + secondGriffindir.getHonor() + secondGriffindir.getBravery();
         if (sumOfPropertiesFirst > sumOfPropertiesSecond) {
-            System.out.println(firstGriffindir.getName() + " лучший Гриффиндорец, чем " + secondGriffindir.getName());
+            System.out.println(firstGriffindir.getName() + " лучший Грифиндорец, чем " + secondGriffindir.getName());
         } else if (sumOfPropertiesFirst < sumOfPropertiesSecond) {
-            System.out.println(firstGriffindir.getName() + " лучший Гриффиндорец, чем " + secondGriffindir.getName());
+            System.out.println(secondGriffindir.getName() + " лучший Грифиндорец, чем " + firstGriffindir.getName());
         } else {
-            System.out.println(firstGriffindir.getName() + " такой же Гриффиндорец, как и " + secondGriffindir.getName());
+            System.out.println(firstGriffindir.getName() + " такой же Грифиндорец, как и " + secondGriffindir.getName());
         }
     }
 }
